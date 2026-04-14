@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Website</title>
+    <link rel="icon" type="image/jpeg" href="./images/tokko_logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init('YOUR_PUBLIC_KEY');</script>
+</head>
+
+<body>
+
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./images/tokko_logo.jpg" alt="tokko_logo"></a>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a>Tally <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="tally-prime.html">Tally Prime</a></li>
+                            <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Training <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="online-training.html">Online Training</a></li>
+                            <li><a href="offline-training.html">Offline Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hr.html">HR</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="tally">Tally Solutions</option>
+                                <option value="cloud">Cloud Services</option>
+                                <option value="training">Training</option>
+                                <option value="hr">HR Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        <p id="formStatus" style="margin-top:10px;font-weight:500;"></p>
+                    </form>
+
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://wa.me/917290053570" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="contact-info-container">
+                    <div class="contact-details">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>70 A, Saratha Mill Road,
+                                    Podanur, Coimbatore 641023. <br>
+                                    <b>Near Arasan Cinema</b></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91-9626778685</p>
+                                <p>+91-9677778685</p>
+                                <p>+91-8122298685</p>
+                                <p>+91-9677758685</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sales@tokko.in</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7834.109343611039!2d76.97391854148356!3d10.9592429068033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85902e5bfe9f1%3A0xd131fc5270e9c8e!2sTOKKO!5e0!3m2!1sen!2sin!4v1775543072932!5m2!1sen!2sin"
+                            width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./images/tokko_logo.jpg" alt="Tokko Logo">
+                </div>
+                <p>We provide Cloud, Backup, Tally, and IT Automation solutions — ensuring secure and reliable
+                    tech to support business growth and efficiency.</p>
+                <a href="#" class="discover-btn">
+                    DISCOVER MORE <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Back Up Solutions</a></li>
+                    <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                    <li><a href="#">TallyPrime</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>70 A, Saratha Mill Road, Podanur, Coimbatore 641023.<br><b>Near Arasan Cinema</b></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9677778685, 9626778685,</span>
+                        <span>8122298685, 9677758685</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sales@tokko.in</span>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917290053570" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/footer.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('formStatus');
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            }).then(function () {
+                status.style.color = 'green';
+                status.textContent = 'Message sent successfully!';
+                document.getElementById('contactForm').reset();
+            }, function () {
+                status.style.color = 'red';
+                status.textContent = 'Failed to send. Please try again.';
+            }).finally(function () {
+                btn.disabled = false;
+                btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+            });
+        });
+    </script>
+</body>
+
+</html>

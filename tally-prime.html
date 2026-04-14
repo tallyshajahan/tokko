@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TallyPrime - Your Website</title>
+    <link rel="icon" type="image/jpeg" href="./images/tokko_logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./images/tokko_logo.jpg" alt="tokko_logo"></a>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="active">Tally <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="tally-prime.html">Tally Prime</a></li>
+                            <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Training <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="online-training.html">Online Training</a></li>
+                            <li><a href="offline-training.html">Offline Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hr.html">HR</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="tally-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Simplify Your Business with Tally Prime</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="tally-intro">
+        <div class="container">
+            <div class="intro-layout">
+                <div class="intro-image">
+                    <img src="./images/tally.jpeg" alt="TallyPrime">
+                </div>
+                <div class="intro-content">
+                    <h2>TallyPrime Accounting Software : Manage your business efficiently</h2>
+                    <p>Tally isn't just software—it's a complete business management accounting solution designed to
+                        make your financial operations seamless and efficient. Here's why millions of businesses trust
+                        Tally to manage their accounting and compliance needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="tally-features">
+        <div class="container">
+            <div class="feature-item">
+                <div class="feature-content">
+                    <h3>Quick to set up, ease to use</h3>
+                    <p>Setting up TallyPrime accounting software is incredibly easy. In just a minute, you'll have the
+                        application ready and can start creating invoices right away. Its intuitive design makes it easy
+                        to set up and learn. With TallyPrime, you'll enjoy a consistent and user-friendly experience
+                        that helps you discover its features effortlessly.</p>
+                </div>
+                <div class="feature-icon feature-img">
+                    <img src="./images/PromotingTally1.png" alt="">
+                </div>
+            </div>
+
+            <div class="feature-item reverse">
+                <div class="feature-icon feature-img">
+                    <img src="./images/PromotingTally2.png" alt="">
+                </div>
+                <div class="feature-content">
+                    <h3>Detailed, actionable, and tailored reports</h3>
+                    <p>With TallyPrime's diverse business reports, you can gain useful insights into various aspects of
+                        your business. These reports help you keep track of cash, inventory, and relationships with
+                        ease, making it simple to navigate and make better decisions for your business's success.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-content">
+                    <h3>Secure, anytime, anywhere access</h3>
+                    <p>TallyPrime allows you to access your business reports from any web browser, no matter where you
+                        are. This feature comes with robust security measures, including multiple user controls.
+                        TallyVault further protects your data with high-level encryption, ensuring that your TallyPrime
+                        remote access is both secure and reliable.</p>
+                </div>
+                <div class="feature-icon feature-img">
+                    <img src="./images/Promoting-Tally3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="tally-pricing">
+        <div class="container">
+            <h2>TallyPrime Prices</h2>
+
+            <!-- INR Pricing -->
+            <div class="pricing-section">
+                <h3>India Pricing (INR)</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>SILVER</h3>
+                        <p class="edition">Single user edition</p>
+                        <p class="description">For Standalone PCs</p>
+                        <div class="price">
+                            <span class="currency">INR</span>
+                            <span class="amount">22,500</span>
+                        </div>
+                        <p class="gst">+ 18% GST (INR 4,050)</p>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>GOLD</h3>
+                        <p class="edition">Unlimited multi-user edition</p>
+                        <p class="description">For multiple PCs on LAN environment</p>
+                        <div class="price">
+                            <span class="currency">INR</span>
+                            <span class="amount">67,500</span>
+                        </div>
+                        <p class="gst">+18% GST (INR 12,150)</p>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>TSS Single</h3>
+                        <p class="edition">Tally Software Services</p>
+                        <p class="description">Annual support plan</p>
+                        <div class="price">
+                            <span class="currency">INR</span>
+                            <span class="amount">4,500</span>
+                        </div>
+                        <p class="gst">+18% GST (INR 810)</p>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>TSS Multi</h3>
+                        <p class="edition">Tally Software Services</p>
+                        <p class="description">Annual support plan</p>
+                        <div class="price">
+                            <span class="currency">INR</span>
+                            <span class="amount">13,500</span>
+                        </div>
+                        <p class="gst">+18% GST (INR 2,430)</p>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OMR Pricing -->
+            <div class="pricing-section">
+                <h3>International Pricing (OMR)</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>Single User Pack</h3>
+                        <p class="edition">Single user edition</p>
+                        <p class="description">For Standalone PCs</p>
+                        <div class="price">
+                            <span class="currency">OMR</span>
+                            <span class="amount">250</span>
+                        </div>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>Multi User Pack</h3>
+                        <p class="edition">Multi-user edition</p>
+                        <p class="description">For multiple PCs</p>
+                        <div class="price">
+                            <span class="currency">OMR</span>
+                            <span class="amount">750</span>
+                        </div>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>TSS Single</h3>
+                        <p class="edition">Tally Software Services</p>
+                        <p class="description">Annual support plan</p>
+                        <div class="price">
+                            <span class="currency">OMR</span>
+                            <span class="amount">50</span>
+                        </div>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="tally-logo">
+                            <i class="fas fa-square" style="color: #4285f4;"></i>
+                            <i class="fas fa-square" style="color: #fbbc04;"></i>
+                            <span>TallyPrime</span>
+                        </div>
+                        <h3>TSS Multi</h3>
+                        <p class="edition">Tally Software Services</p>
+                        <p class="description">Annual support plan</p>
+                        <div class="price">
+                            <span class="currency">OMR</span>
+                            <span class="amount">150</span>
+                        </div>
+                        <a href="#" class="contact-btn">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features -->
+    <section class="additional-features">
+        <div class="container">
+            <h2>Get More Done with TallyPrime!</h2>
+
+            <div class="additional-features-grid">
+                <div class="feature-item">
+                    <div class="feature-content">
+                        <h3>Simplified Your Accounting with TallyPrime</h3>
+                        <p>TallyPrime simplifies your accounting tasks with features like automated reconciliation,
+                            seamless compliance reporting, and effortlessly managing GST, TDS, TCS, and GSTR-1 by
+                            uploading your documents—TallyPrime takes care of the rest.</p>
+                    </div>
+                    <div class="feature-icon feature-img">
+                        <img src="./images/tally-p1.png" alt="TallyPrime">
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-icon feature-img">
+                        <img src="./images/tally-p2.png" alt="TallyPrime E-way">
+                    </div>
+                    <div class="feature-content">
+                        <h3>E-Way Bill and E-Invoice Generation</h3>
+                        <p>TallyPrime streamlines GST compliance with automated e-way bill and e-invoice generation (Bkg
+                            link). The software integrates directly with the GST portal, enabling you to process single
+                            or multiple invoices without manual intervention.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-content">
+                        <h3>Powerful Reporting for Better Insights</h3>
+                        <p>With an intuitive reporting engine, TallyPrime offers features like Change View, Filters,
+                            Save View.</p>
+                        <ul>
+                            <li><strong>Filters in Reports:</strong> Easily apply filters to narrow down the exact
+                                results you need.</li>
+                            <li><strong>Change View:</strong> Explore alternative views of reports for deeper insights.
+                            </li>
+                            <li><strong>Save View:</strong> Personalize your reports by creating and saving multiple
+                                perspectives.</li>
+                        </ul>
+                    </div>
+                    <div class="feature-icon feature-img">
+                        <img src="./images/tally-p3.png" alt="TallyPrime">
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-icon feature-img">
+                        <img src="./images/tally-p4.png" alt="TallyPrime Server">
+                    </div>
+                    <div class="feature-content">
+                        <h3>TallyPrime Server</h3>
+                        <p>TallyPrime Server adds powerful server-based capabilities to the TallyPrime Gold license,
+                            making it ideal for medium and large enterprises. Its advanced Architecture ensures greater
+                            concurrency, secure data access, and real-time monitoring capabilities. TallyPrime Server
+                            helps growing businesses enhance efficiency, streamline operations, and maintain robust data
+                            security.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-content">
+                        <h3>TallyPrime Rental</h3>
+                        <p><em>(According to your business needs)</em></p>
+                        <p>For businesses seeking a short-term accounting solution, TallyPrime Rental offers unmatched
+                            flexibility. Avoid upfront investment by choosing monthly or quarterly payment options and
+                            access the full range of Tally features. This cost-effective solution allows businesses to
+                            enjoy software while keeping expenses low.</p>
+                    </div>
+                    <div class="feature-icon feature-img">
+                        <img src="./images/tally-p5.png" alt="TallyPrime Rental">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Transform Your Business with TallyPrime</h2>
+            <p>Unlock the full potential of your business with Tally Prime. From automated invoicing to real-time
+                reporting, TallyPrime has everything you need to grow seamlessly.</p>
+            <a href="#" class="cta-button">GET STARTED TODAY <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./images/tokko_logo.jpg" alt="Tokko Logo">
+                </div>
+                <p>We provide Cloud, Backup, Tally, and IT Automation solutions — ensuring secure and reliable
+                    tech to support business growth and efficiency.</p>
+                <a href="#" class="discover-btn">
+                    DISCOVER MORE <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Back Up Solutions</a></li>
+                    <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                    <li><a href="#">TallyPrime</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>70 A, Saratha Mill Road, Podanur, Coimbatore 641023.<br><b>Near Arasan Cinema</b></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9677778685, 9626778685,</span>
+                        <span>8122298685, 9677758685</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sales@tokko.in</span>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917290053570" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/footer.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

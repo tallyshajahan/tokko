@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TallyPrime - Your Website</title>
+    <link rel="icon" type="image/jpeg" href="./images/tokko_logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./images/tokko_logo.jpg" alt="tokko_logo"></a>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="active">Tally <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="tally-prime.html">Tally Prime</a></li>
+                            <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Training <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="online-training.html">Online Training</a></li>
+                            <li><a href="offline-training.html">Offline Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hr.html">HR</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="tally-cloud-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Access Tally on Cloud Anywhere, Anytime and Any Device</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Tally on Cloud- Anywhere, Anytime, Any device</h2>
+            <p>Introducing Tally on Cloud — a seamless Tally cloud solution solution that makes your Tally data secure and accessible from any device. Break free from location limitations and scale your computing resources based on your unique business needs. With Tally on Cloud, experience flexibility, enhanced security, and the ability to access your financial data whenever you need it, wherever you are.</p>
+            <a href="#" class="cta-button">GET STARTED CONSULTATION <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="pricing-table-section">
+        <div class="container">
+            <h2>TallyPrime on Cloud Pricing</h2>
+            <div class="table-responsive">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>TallyPrime on Cloud</th>
+                            <th>Max Users</th>
+                            <th>Period</th>
+                            <th>Basic Amount per VM</th>
+                            <th>GST</th>
+                            <th>Landed Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TallyPrime on AWS-Personal</td>
+                            <td>1</td>
+                            <td>30 Days</td>
+                            <td>600.00</td>
+                            <td>108.00</td>
+                            <td>708.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime on AWS-Regular</td>
+                            <td>2</td>
+                            <td>30 Days</td>
+                            <td>1,200.00</td>
+                            <td>216.00</td>
+                            <td>1,416.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime on AWS-Regular Plus</td>
+                            <td>4</td>
+                            <td>30 Days</td>
+                            <td>1,800.00</td>
+                            <td>324.00</td>
+                            <td>2,124.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime on AWS-Regular Pro</td>
+                            <td>8</td>
+                            <td>30 Days</td>
+                            <td>3,600.00</td>
+                            <td>648.00</td>
+                            <td>4,248.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime on AWS-Performance</td>
+                            <td>12</td>
+                            <td>30 Days</td>
+                            <td>5,400.00</td>
+                            <td>972.00</td>
+                            <td>6,372.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime on AWS-Performance Plus</td>
+                            <td>16</td>
+                            <td>30 Days</td>
+                            <td>7,200.00</td>
+                            <td>1,296.00</td>
+                            <td>8,496.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Performance</td>
+                            <td>8</td>
+                            <td>30 Days</td>
+                            <td>6,000.00</td>
+                            <td>1,080.00</td>
+                            <td>7,080.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Performance Max</td>
+                            <td>12</td>
+                            <td>30 Days</td>
+                            <td>9,000.00</td>
+                            <td>1,620.00</td>
+                            <td>10,620.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Performance Plus</td>
+                            <td>16</td>
+                            <td>30 Days</td>
+                            <td>12,000.00</td>
+                            <td>2,160.00</td>
+                            <td>14,160.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Performance Max Plus</td>
+                            <td>24</td>
+                            <td>30 Days</td>
+                            <td>18,000.00</td>
+                            <td>3,240.00</td>
+                            <td>21,240.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Performance Pro</td>
+                            <td>32</td>
+                            <td>30 Days</td>
+                            <td>24,000.00</td>
+                            <td>4,320.00</td>
+                            <td>28,320.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Enterprise</td>
+                            <td>48</td>
+                            <td>30 Days</td>
+                            <td>36,000.00</td>
+                            <td>6,480.00</td>
+                            <td>42,480.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Enterprise Plus</td>
+                            <td>64</td>
+                            <td>30 Days</td>
+                            <td>48,000.00</td>
+                            <td>8,640.00</td>
+                            <td>56,640.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Enterprise Max Plus</td>
+                            <td>96</td>
+                            <td>30 Days</td>
+                            <td>72,000.00</td>
+                            <td>12,960.00</td>
+                            <td>84,960.00</td>
+                        </tr>
+                        <tr>
+                            <td>TallyPrime Server on AWS-Enterprise Pro</td>
+                            <td>128</td>
+                            <td>30 Days</td>
+                            <td>96,000.00</td>
+                            <td>17,280.00</td>
+                            <td>1,13,280.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+     <!-- Service Cards -->
+    <section class="service-cards-section">
+        <div class="container">
+            <h2>Why Choose Tally Cloud Solutions ?</h2>
+            <div class="cards-grid">
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-business-time"></i></div>
+                            <h3>Improved business continuity</h3>
+                            <p>Work from anywhere with seamless access to your Tally data. Tally on Cloud ensures your business operates without disruptions, even in unforeseen circumstances.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Improved business continuity</h3>
+                            <p>Work from anywhere with seamless access to your Tally data. Tally on Cloud ensures your business operates without disruptions, even in unforeseen circumstances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Low cost, scalable solution</h3>
+                            <p>Flexible plans tailored to your business needs help keep costs low. Tally on Cloud adapts easily to changing requirements, allowing you to scale effortlessly.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Low cost, scalable solution</h3>
+                            <p>Flexible plans tailored to your business needs help keep costs low. Tally on Cloud adapts easily to changing requirements, allowing you to scale effortlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Top-level security</h3>
+                            <p>Highly secure Tally on Cloud servers protect your data from threats. With regular backups and robust encryption, your important data remains safe and secure.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Top-level security</h3>
+                            <p>Highly secure Tally on Cloud servers protect your data from threats. With regular backups and robust encryption, your important data remains safe and secure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-users-cog"></i></div>
+                            <h3>Seamless collaboration</h3>
+                            <p>Tally on Cloud allows multiple users to access and collaborate on the same data simultaneously, improving team efficiency and coordination.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Seamless collaboration</h3>
+                            <p>Tally on Cloud allows multiple users to access and collaborate on the same data simultaneously, improving team efficiency and coordination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-database"></i></div>
+                            <h3>Centralized data access</h3>
+                            <p>Access all your Tally data in one centralized location. Say goodbye to the need for local servers and the roadblocks to efficiency they bring.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Centralized data access</h3>
+                            <p>Access all your Tally data in one centralized location. Say goodbye to the need for local servers and the roadblocks to efficiency they bring.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud Infrastructure</h3>
+                            <p>Leverage robust cloud infrastructure for enhanced performance and reliability. Experience faster processing and improved system stability.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Cloud Infrastructure</h3>
+                            <p>Leverage robust cloud infrastructure for enhanced performance and reliability. Experience faster processing and improved system stability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Why Choose tokko Section -->
+    <section class="why-tokko-section">
+        <div class="container">
+            <h2>Why Choose tokko for Tally on Cloud Services?</h2>
+            <div class="why-intro">
+                <p>We provide your organization with its most valuable asset—the cloud—along with actionable insights and unparalleled support.</p>
+            </div>
+            <div class="why-features">
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Ideal for Growing Businesses</h3>
+                    <p>Our Tally on Cloud solution is perfect for businesses with multiple locations, offering centralized access without the hassle of managing servers.</p>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost-Effective Plans</h3>
+                    <p>Our budget-friendly plans allow businesses of all sizes to choose options that fit their needs, reducing operational costs while boosting productivity.</p>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Multi-User Collaboration</h3>
+                    <p>Empower teams with real-time access to data, enhancing collaboration and simplifying operations for businesses of any scale.</p>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Robust Security</h3>
+                    <p>With advanced encryption, antivirus protection, and automated backups, tokko prioritizes your data security at every level.</p>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Flexible Accessibility</h3>
+                    <p>With tokko’s Tally on Cloud, access your Tally data remotely without any compromises on security or usability.</p>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Flexible Accessibility</h3>
+                    <p>With tokko’s Tally on Cloud, access your Tally data remotely without any compromises on security or usability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./images/tokko_logo.jpg" alt="Tokko Logo">
+                </div>
+                <p>We provide Cloud, Backup, Tally,  and IT Automation solutions — ensuring secure and reliable
+                    tech to support business growth and efficiency.</p>
+                <a href="#" class="discover-btn">
+                    DISCOVER MORE <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Back Up Solutions</a></li>
+                    <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                    <li><a href="#">TallyPrime</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>70 A, Saratha Mill Road, Podanur, Coimbatore 641023.<br><b>Near Arasan Cinema</b></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9677778685, 9626778685,</span>
+                        <span>8122298685, 9677758685</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sales@tokko.in</span>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917290053570" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/footer.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

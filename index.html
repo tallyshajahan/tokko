@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Your Website</title>
+    <link rel="icon" type="image/jpeg" href="./images/tokko_logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./images/tokko_logo.jpg" alt="tokko_logo"></a>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li>
+                        <a>Tally <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="tally-prime.html">Tally Prime</a></li>
+                            <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Training <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="online-training.html">Online Training</a></li>
+                            <li><a href="offline-training.html">Offline Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hr.html">HR</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="./images/slider1.png" alt="Tally Solutions">
+                <div class="slide-content">
+                    <h2>Professional Tally Solutions</h2>
+                    <p>Complete accounting and business management software</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/slider2.png" alt="Training Programs">
+                <div class="slide-content">
+                    <h2>Expert Training Programs</h2>
+                    <p>Learn from certified professionals with hands-on experience</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/slider3.png" alt="HR Services">
+                <div class="slide-content">
+                    <h2>Comprehensive HR Services</h2>
+                    <p>Streamline your human resource management processes</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </section>
+
+    <!-- Service Cards -->
+    <section class="service-cards-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="cards-grid">
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-calculator"></i></div>
+                            <h3>Tally Solutions</h3>
+                            <p>Streamline accounting processes with secure and scalable Tally solutions.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Tally Solutions</h3>
+                            <p>Streamline accounting processes with secure and scalable Tally solutions.</p>
+                            <a href="tally.html" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud Services</h3>
+                            <p>Elevate business efficiency with secure, scalable, and flexible cloud infrastructure.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Cloud Services</h3>
+                            <p>Elevate business efficiency with secure, scalable, and flexible cloud infrastructure.</p>
+                            <a href="tally.html" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Backup Solutions</h3>
+                            <p>Protect critical data with automated, secure, and reliable backup solutions for
+                                businesses</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Backup Solutions</h3>
+                            <p>Protect critical data with automated, secure, and reliable backup solutions for
+                                businesses</p>
+                            <a href="training.html" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-users"></i></div>
+                            <h3>Data Analytics</h3>
+                            <p>Transform raw data into actionable insights with powerful data analysis tools.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Data Analytics</h3>
+                            <p>Transform raw data into actionable insights with powerful data analysis tools.</p>
+                            <a href="hr.html" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/about.png" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <h2>Your Complete Business Solution</h2>
+                    <p>Tally, Cloud, and Backup Services</p>
+                    <p>We are a leading provider of cloud solutions, backup, and security solutions, serving businesses with reliable and scalable technologies. Our services include enterprise cloud solutions like VPS (private servers), GPU, Tally on Cloud, and specialized support for platforms like Busy and Genius on Cloud, ensuring seamless access and performance for your operations. As a trusted Tally solution partner, we deliver the latest Tally Prime software with cloud support and whatsapp, helping businesses stay efficient and compliant. Our dedicated backup services safeguard your data through advanced security and disaster recovery measures. From startups to large enterprises, we deliver comprehensive solutions that drive business success.</p>
+                    <a href="about.html" class="cta-button">About Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tally Section -->
+    <section class="tally-section">
+        <div class="container">
+            <h2>Cutting-Edge Products to Drive Business Success</h2>
+            <div class="tally-intro">
+                <p>At TOKKO, we deliver industry-leading products designed to empower modern businesses. From Tally and
+                    Odoo to advanced cybersecurity solutions, our offerings are designed to enhance efficiency,
+                    streamline operations, and safeguard your business.</p>
+            </div>
+            <div class="tally-features">
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Tally</h3>
+                    <p>Simplify accounting, compliance, and inventory management with Tally Prime’s powerful features.
+                    </p>
+                    <a href="tally.html" class="cta-button">Explore Tally Solutions</a>
+                </div>                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why tokko Section -->
+    <section class="why-tokko-section">
+        <div class="container">
+            <h2>Why tokko Solutions?</h2>
+            <div class="why-intro">
+                <p>At tokko, we are committed to delivering industry-leading cloud, Tally, and backup solutions designed to streamline your business operations and enhance productivity.</p>
+            </div>
+            <div class="why-features">
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Skill, Talent, and Expertise</h3>
+                    <ul>
+                        <li>Over years of excellence in cloud and IT solutions.</li>
+                        <li>Successfully delivered Tally solutions to businesses worldwide.</li>
+                        <li>Vast talent pool with strong IT expertise across India.</li>
+                    </ul>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalability and Execution</h3>
+                    <ul>
+                        <li>Flexible solutions tailored for businesses of all sizes.</li>
+                        <li>Quick scalability to adapt to changing business needs.</li>
+                        <li>Zero downtime during transitions or scaling</li>
+                    </ul>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Robust Security</h3>
+                    <ul>
+                        <li>Advanced security protocols and role-based access controls.</li>
+                        <li>Regular assessments to safeguard your critical data.</li>
+                        <li>Disaster recovery plans to ensure business continuity.</li>
+                    </ul>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Fully Managed Services</h3>
+                    <ul>
+                        <li>End-to-end management of cloud, Tally, and backup solutions.</li>
+                        <li>Personalized customizations for unique business requirements.</li>
+                        <li>24/7 support and proactive maintenance</li>
+                    </ul>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Uninterrupted Business Continuity</h3>
+                    <ul>
+                        <li>Multi-level backup strategies to prevent data loss.</li>
+                        <li>Comprehensive disaster recovery planning and drills.</li>
+                        <li>On-site and remote support to maintain operational flow.</li>
+                    </ul>
+                </div>
+                <div class="why-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Mission-Critical Support</h3>
+                    <ul>
+                        <li>Experienced team to support your IT infrastructure.</li>
+                        <li>Proven track record in delivering secure and scalable solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faqs-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is Tally, and what services does tokko provide?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tokko provides comprehensive cloud, Tally, and backup solutions designed to streamline business operations. Our services include Tally on Cloud, Tally Prime, customization options, and dedicated support to help businesses make the most of Tally for efficient, seamless processes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does tokko work?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We simplify, optimize, and deliver tailored solutions for your business. Our process involves understanding your needs, implementing customized solutions, and providing continuous support for lasting results.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is Tally on Cloud, and how does it work?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tally on Cloud allows you to access Tally software from anywhere, ensuring real-time updates and secure data storage.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is cloud backup secure with tokko Solutions?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we use advanced security protocols to ensure that your data remains protected and accessible whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./images/tokko_logo.jpg" alt="Tokko Logo">
+                </div>
+                <p>We provide Cloud, Backup, Tally,  and IT Automation solutions — ensuring secure and reliable tech to support business growth and efficiency.</p>
+                <a href="#" class="discover-btn">
+                    DISCOVER MORE <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Back Up Solutions</a></li>
+                    <li><a href="tally-cloud.html">Tally on Cloud</a></li>
+                    <li><a href="#">TallyPrime</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>70 A, Saratha Mill Road, Podanur, Coimbatore 641023.<br><b>Near Arasan Cinema</b></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9677778685, 9626778685,</span>
+                        <span>8122298685, 9677758685</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sales@tokko.in</span>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917290053570" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>
