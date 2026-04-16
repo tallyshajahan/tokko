@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Your Website</title>
+    <title>Contact Us</title>
     <link rel="icon" type="image/jpeg" href="./images/tokko_logo.jpg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>emailjs.init('YOUR_PUBLIC_KEY');</script>
+    <script>emailjs.init('Y0yEX2h430Mo8ctpa');</script>
 </head>
 
 <body>
@@ -225,9 +225,9 @@
             btn.disabled = true;
             btn.textContent = 'Sending...';
 
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-                from_name: document.getElementById('name').value,
-                from_email: document.getElementById('email').value,
+            emailjs.send('service_y90od6m', 'template_vxq2rgm', {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
                 phone: document.getElementById('phone').value,
                 service: document.getElementById('service').value,
                 message: document.getElementById('message').value
